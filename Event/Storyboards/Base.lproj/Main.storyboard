@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bUI-tX-yua">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Event" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VA5-5t-aig">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p9m-oJ-wVC">
+                            <connections>
+                                <segue destination="4ae-JK-JfC" kind="presentation" modalPresentationStyle="overFullScreen" id="bsM-Qy-xri"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mnS-OC-Ida">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bUI-tX-yua" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sgx-5z-rIL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Rkq-ge-gTq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhD-3E-rhT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+        <!--Create a new business-->
+        <scene sceneID="Pud-jZ-1Xb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7I-qO-Eki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="CreateBusinessVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="otJ-uB-Udy" customClass="CreateBusinessViewController" customModule="Event" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gei-Cu-4aL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of business" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WMQ-Xj-V3f">
+                                <rect key="frame" x="30" y="419" width="354" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="U5o-1m-SRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the name of your business?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdZ-C1-OwR">
+                                <rect key="frame" x="40" y="368.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVW-mr-992">
+                                <rect key="frame" x="30" y="507" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xYM-jp-tCC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickedNext:" destination="otJ-uB-Udy" eventType="touchUpInside" id="C4z-0q-2Tp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6QU-0N-hRf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WMQ-Xj-V3f" firstAttribute="centerY" secondItem="gei-Cu-4aL" secondAttribute="centerY" id="4Q6-g9-PGq"/>
+                            <constraint firstItem="FVW-mr-992" firstAttribute="leading" secondItem="6QU-0N-hRf" secondAttribute="leading" constant="30" id="546-RK-qge"/>
+                            <constraint firstItem="6QU-0N-hRf" firstAttribute="trailing" secondItem="DdZ-C1-OwR" secondAttribute="trailing" id="7Y2-FM-X53"/>
+                            <constraint firstItem="DdZ-C1-OwR" firstAttribute="leading" secondItem="6QU-0N-hRf" secondAttribute="leading" constant="40" id="HFB-HZ-jTg"/>
+                            <constraint firstItem="FVW-mr-992" firstAttribute="top" secondItem="WMQ-Xj-V3f" secondAttribute="bottom" constant="30" id="Pgy-Cu-4av"/>
+                            <constraint firstItem="6QU-0N-hRf" firstAttribute="trailing" secondItem="WMQ-Xj-V3f" secondAttribute="trailing" constant="30" id="Rim-nb-Z4t"/>
+                            <constraint firstItem="6QU-0N-hRf" firstAttribute="trailing" secondItem="FVW-mr-992" secondAttribute="trailing" constant="30" id="Ttu-Oc-hfi"/>
+                            <constraint firstItem="WMQ-Xj-V3f" firstAttribute="centerX" secondItem="gei-Cu-4aL" secondAttribute="centerX" id="X6Q-Ve-xGw"/>
+                            <constraint firstItem="WMQ-Xj-V3f" firstAttribute="leading" secondItem="6QU-0N-hRf" secondAttribute="leading" constant="30" id="cCE-NP-ucM"/>
+                            <constraint firstItem="WMQ-Xj-V3f" firstAttribute="top" secondItem="DdZ-C1-OwR" secondAttribute="bottom" constant="30" id="zkA-jR-MM1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a new business" id="PaG-ON-hgz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="EHp-o4-TZN"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameOfBusinessTextField" destination="WMQ-Xj-V3f" id="ray-5S-UUg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3552" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="01W-yX-vax">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJ0-4i-TvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ae-JK-JfC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Ot-4b-tyf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="otJ-uB-Udy" kind="relationship" relationship="rootViewController" id="K22-df-YNv"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2447.826086956522" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
